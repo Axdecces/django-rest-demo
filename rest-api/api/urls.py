@@ -4,7 +4,7 @@ from api import views
 
 router = DefaultRouter()
 router.register(r'users', views.UserViewSet,basename="user")
-router.register(r'address', views.AddressViewSet,basename="address")
+router.register(r'addresses', views.AddressViewSet,basename="address")
 
 urlpatterns = [
     path('', include(router.urls)),
